@@ -52,3 +52,13 @@ html{
     border: 1.5px solid;
     border-color: red;
 }
+
+@media screen and (max-width: 425px){
+
+    .formwrapper{
+        width: 100vw;
+    }
+
+
+
+}
