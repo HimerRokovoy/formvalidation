@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-auth</title>
+    
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/mystyles.css">
+</head>
+<body>
+        <form id="form"  class="formwrapper" novalidate autocomplete="">
+            <div class="mb-3" id="name-field">
+                <label class="form-label">Имя</label>
+                <!-- На самом деле не знаю как ограничить имя и фамилию по количеству символов, самое длинно имя к примеру состоит из 1478 букв поэтому можно просто поставить ограничение основываясь на этом факте, хотя как мне кажется 100 символов вполне должно хватить, ну и так как форма не предусматривает никакой верификации, то можно предположить что введенные данные могут быть фейком и пользователь по сути что угодно может ввести, поэтому просто оставлю 100 символов) -->
+                <input type="text" class="form-control input" id="name" placeholder="Олег" maxlength="100">
+                <div class="alert alert-danger name-alert" role="alert" style="display:none">
+                    Символы латиницы или кирилицы, не более 100 символов
+                </div>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Фамилия</label>
+                <input type="text" class="form-control input" id="surname" placeholder="Мурашкин" maxlength="100" >
+                <div class="alert alert-danger surname-alert" role="alert" style="display:none">
+                    Символы латиницы или кирилицы, не более 100 символов
+                </div>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Адресс электронной почты</label>
+                <input type="email" class="form-control input" id="email"  placeholder="name@example.com" >
+                <div class="alert alert-danger email-alert" role="alert" style="display:none">
+                    Недопустипый Email
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Пароль</label>
+                <input type="password" class="form-control input" id="password">
+                <div class="alert alert-danger password-alert" role="alert" style="display:none">
+                    Минимальная длина пароля 8 символов. Пароль должен содержать минимум одну цифру, по одной заглавной и строчную буквы и один символ.
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Повторите пароль</label>
+                <input type="password" class="form-control input" id="repassword">
+                <div class="alert alert-danger repass-alert" role="alert" style="display:none">
+                    Пароли не совпадают
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Дата рождения</label>
+                <input type="date" class="form-control input" id="birthdate">
+                <div class="alert alert-danger date-alert" role="alert" style="display:none">
+                    Минимальный возраст 18 лет, подрастите чуть-чуть 
+                  </div>
+            </div>
+            <input type="submit" class="btn btn-secondary" id="submit" >
+        </form>
+</body>
+<script src="validation.js"></script>
+</html>

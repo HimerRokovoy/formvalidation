@@ -1,0 +1,54 @@
+body{
+    font-size: 10px;
+    background-color: rgb(85, 85, 85);
+}
+
+html{
+    font-size: 10px;
+}
+
+
+.formwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(12, 12, 12);
+    /* height: 45rem; */
+    width: 60rem;
+    background-color: rgb(219, 214, 214);
+    border: 0.5px solid black;
+    margin: 0 auto;
+    margin-top: 5em;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px rgb(207, 207, 207);
+}
+
+.elem{
+    display:block;
+    width: 50%;
+    background-color: rgb(5, 134, 134);
+    height: 2em;
+}
+
+.input{
+    font-size: 1.5rem;
+    /* display: inline-block;
+    width: 70%; */
+}
+
+#submit{
+    display: block;
+    align-self: center;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.error{
+    border: 1.5px solid;
+    border-color: red;
+}
