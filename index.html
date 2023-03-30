@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
-        <form id="form"  class="formwrapper" novalidate autocomplete="">
+        <form id="form"  class="formwrapper" novalidate>
             <div class="mb-3" id="name-field">
                 <label class="form-label">Имя</label>
                 <!-- На самом деле не знаю как ограничить имя и фамилию по количеству символов, самое длинно имя к примеру состоит из 1478 букв поэтому можно просто поставить ограничение основываясь на этом факте, хотя как мне кажется 100 символов вполне должно хватить, ну и так как форма не предусматривает никакой верификации, то можно предположить что введенные данные могут быть фейком и пользователь по сути что угодно может ввести, поэтому просто оставлю 100 символов) -->
@@ -56,6 +56,7 @@
             </div>
             <input type="submit" class="btn btn-secondary" id="submit" >
         </form>
+    <script src="validation.js"></script>
 </body>
-<script src="validation.js"></script>
+
 </html>
